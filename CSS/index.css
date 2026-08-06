@@ -359,6 +359,14 @@ html::-webkit-scrollbar-track{
     display: none;
 }
 
+.top i{
+    font-size: 4rem;
+    color: var(--yellow);
+    background: #333;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+}
+
 
 
 
