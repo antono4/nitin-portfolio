@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#0a0a0a">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nitin Singh | Frontend Developer</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/CSS/index.css">
-
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
     <!-- Custom Cursor -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
-    <!-- Floating Navigation -->
+    <!-- Navigation -->
     <nav class="floating-nav">
         <div class="nav-logo">
             <span class="logo-text">NS</span>
@@ -55,10 +59,9 @@
     <section class="hero" id="home">
         <div class="hero-bg">
             <div class="hero-gradient"></div>
-            <div class="hero-particles"></div>
         </div>
         <div class="hero-content">
-            <div class="hero-image-wrapper">
+            <div class="hero-image-wrapper animate-item">
                 <div class="hero-image-border"></div>
                 <img src="/Images/nitin.jpeg" alt="Nitin Singh" class="hero-image">
                 <div class="hero-status">
@@ -109,49 +112,44 @@
             <p class="section-subtitle">Get to know me better</p>
         </div>
         <div class="about-content">
-            <div class="about-card about-card-left">
+            <div class="about-card">
                 <div class="about-icon">
                     <i class="fas fa-user"></i>
                 </div>
                 <h3>Personal Info</h3>
-                <div class="info-list">
-                    <div class="info-item">
-                        <span class="info-label">Name</span>
-                        <span class="info-value">Nitin Singh</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label">Age</span>
-                        <span class="info-value">20 Years</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label">Role</span>
-                        <span class="info-value">Frontend Developer</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="info-label">Languages</span>
-                        <span class="info-value">English, Hindi</span>
-                    </div>
+                <div class="info-item">
+                    <span class="info-label">Name</span>
+                    <span class="info-value">Nitin Singh</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Age</span>
+                    <span class="info-value">20 Years</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Role</span>
+                    <span class="info-value">Frontend Developer</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Languages</span>
+                    <span class="info-value">English, Hindi</span>
                 </div>
             </div>
-            <div class="about-card about-card-right">
+            <div class="about-card">
                 <div class="about-icon">
                     <i class="fas fa-briefcase"></i>
                 </div>
                 <h3>Experience</h3>
                 <div class="stats-grid">
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="1">0</span>
-                        <span class="stat-suffix">+</span>
+                    <div>
+                        <span class="stat-number" data-count="1">0</span><span class="stat-suffix">+</span>
                         <span class="stat-label">Years Experience</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="2">0</span>
-                        <span class="stat-suffix">+</span>
+                    <div>
+                        <span class="stat-number" data-count="2">0</span><span class="stat-suffix">+</span>
                         <span class="stat-label">Projects Done</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="1000">0</span>
-                        <span class="stat-suffix">+</span>
+                    <div>
+                        <span class="stat-number" data-count="1000">0</span><span class="stat-suffix">+</span>
                         <span class="stat-label">GitHub Contributions</span>
                     </div>
                 </div>
@@ -173,7 +171,7 @@
                 </div>
                 <h4>JavaScript</h4>
                 <div class="skill-bar">
-                    <div class="skill-progress" style="--progress: 90%"></div>
+                    <div class="skill-progress"></div>
                 </div>
                 <span class="skill-percent">90%</span>
             </div>
@@ -183,7 +181,7 @@
                 </div>
                 <h4>React</h4>
                 <div class="skill-bar">
-                    <div class="skill-progress" style="--progress: 85%"></div>
+                    <div class="skill-progress"></div>
                 </div>
                 <span class="skill-percent">85%</span>
             </div>
@@ -193,7 +191,7 @@
                 </div>
                 <h4>CSS3</h4>
                 <div class="skill-bar">
-                    <div class="skill-progress" style="--progress: 95%"></div>
+                    <div class="skill-progress"></div>
                 </div>
                 <span class="skill-percent">95%</span>
             </div>
@@ -203,7 +201,7 @@
                 </div>
                 <h4>Bootstrap</h4>
                 <div class="skill-bar">
-                    <div class="skill-progress" style="--progress: 80%"></div>
+                    <div class="skill-progress"></div>
                 </div>
                 <span class="skill-percent">80%</span>
             </div>
@@ -213,7 +211,7 @@
                 </div>
                 <h4>C Programming</h4>
                 <div class="skill-bar">
-                    <div class="skill-progress" style="--progress: 75%"></div>
+                    <div class="skill-progress"></div>
                 </div>
                 <span class="skill-percent">75%</span>
             </div>
@@ -223,7 +221,7 @@
                 </div>
                 <h4>Java</h4>
                 <div class="skill-bar">
-                    <div class="skill-progress" style="--progress: 70%"></div>
+                    <div class="skill-progress"></div>
                 </div>
                 <span class="skill-percent">70%</span>
             </div>
@@ -399,18 +397,18 @@
                     </a>
                 </div>
             </div>
-            <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+            <form class="contact-form">
                 <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="email" placeholder="Your Email" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="subject" placeholder="Subject">
+                    <input type="text" placeholder="Subject">
                 </div>
                 <div class="form-group">
-                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-submit">
                     <span>Send Message</span>
@@ -422,18 +420,14 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <span>Nitin Singh</span>
-            </div>
-            <p class="footer-text">Crafting digital experiences with passion</p>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <p class="footer-copy">Designed & Built by Antono</p>
+        <div class="footer-logo">Nitin Singh</div>
+        <p class="footer-text">Crafting digital experiences with passion</p>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </div>
+        <p class="footer-copy">Designed & Built by Antono</p>
     </footer>
 
     <!-- Scroll to Top -->
@@ -441,8 +435,8 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- jquery cdn link -->
+    <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/javascript/script.js"></script>
+    <script src="/javascript/main.js"></script>
 </body>
 </html>
