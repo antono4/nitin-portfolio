@@ -4,232 +4,445 @@
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#6366F1">
+    <meta name="theme-color" content="#0a0a0a">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- css file  -->
+    <title>Nitin Singh | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/CSS/index.css">
 
 </head>
 <body>
-<header>
-  <!-- header section -->
-  <div class="user">
-      <img src="/Images/nitin.jpeg" alt="">
-      <h3 class="name">Nitin Singh</h3>
-      <p class="post">Front end developer</p>
-  </div>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-  <nav class="navbar">
-      <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#portfolio">Hobbies</a></li>
-          <li><a href="#contact">Contact</a></li>
-      </ul>
-  </nav>
-
-  </header>
-
-  <div id="menu" class="fas fa-bar"></div>
-
-  <!-- home section starts -->
-  <section class="home" id="home">
-
-<h3>HI THERE !</h3>
-<h1>I'm <span>Nitin Singh</span></h1>
-<p>I am currently pursuing my B.tech in CSE from Gla university, Mathura. I am interested in the field of software development and I am actively seeking new opportunities in the same.Have experience in Agile Project Management. Proficient in C, Java, DSA, 
-    Problem Solving, react , javascript and bootstrap .</p>
-    <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
-
-<!-- home section ends -->
-
-  </section>
-  <!-- about section starts  -->
-
-<section class="about" id="about">
-
-    <h1 class="heading"> <span>about</span> me </h1>
-    
-    <div class="row">
-    
-        <div class="info">
-            <h3> <span> name : </span> Nitin Singh </h3>
-            <h3> <span> age : </span> 20 </h3>
-            <h3> <span> qualification : </span> B.Tech. in Computer Science </h3>
-            <h3> <span> post : </span> front end developer </h3>
-            <h3> <span> language : </span> English/hindi </h3>
-            <a href="/resume/Resume nitin singh final-1 (3).pdf"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <div class="nav-logo">
+            <span class="logo-text">NS</span>
         </div>
-    
-        <div class="counter">
-    
-            <div class="box">
-                <span>1+</span>
-                <h3>years of working on Front end development</h3>
-            </div>
-    
-            <div class="box">
-                <span>2+</span>
-                <h3>project completed</h3>
-            </div>
-    
-            <div class="box">
-                <span>10+</span>
-                <h3>happy clients</h3>
-            </div>
-    
-            <div class="box">
-                <span>1000+</span>
-                <h3>Contributions on Github</h3>
-            </div>
-    
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#hobbies" class="nav-link">Hobbies</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </div>
-    
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#education" class="mobile-link">Education</a>
+            <a href="#hobbies" class="mobile-link">Hobbies</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
     </div>
-    
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-image-wrapper">
+                <div class="hero-image-border"></div>
+                <img src="/Images/nitin.jpeg" alt="Nitin Singh" class="hero-image">
+                <div class="hero-status">
+                    <span class="status-dot"></span>
+                    Available for work
+                </div>
+            </div>
+            <div class="hero-text">
+                <p class="hero-greeting animate-item">Hello, I'm</p>
+                <h1 class="hero-name animate-item">Nitin Singh</h1>
+                <div class="hero-title-wrapper animate-item">
+                    <span class="hero-title-prefix">Frontend</span>
+                    <span class="hero-title">Developer</span>
+                </div>
+                <p class="hero-description animate-item">
+                    B.Tech student at GLA University passionate about crafting beautiful, 
+                    functional web experiences with React, JavaScript, and modern CSS.
+                </p>
+                <div class="hero-tags animate-item">
+                    <span class="tag">React</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Bootstrap</span>
+                </div>
+                <div class="hero-buttons animate-item">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get in Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="/resume/Resume nitin singh final-1 (3).pdf" class="btn btn-secondary" download>
+                        <span>Download CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll</div>
+            <div class="scroll-line"></div>
+        </div>
     </section>
-    
-    <!-- about section ends -->
-    
-    <!-- education section starts  -->
-    
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <span class="section-label">01</span>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Get to know me better</p>
+        </div>
+        <div class="about-content">
+            <div class="about-card about-card-left">
+                <div class="about-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Personal Info</h3>
+                <div class="info-list">
+                    <div class="info-item">
+                        <span class="info-label">Name</span>
+                        <span class="info-value">Nitin Singh</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Age</span>
+                        <span class="info-value">20 Years</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Role</span>
+                        <span class="info-value">Frontend Developer</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Languages</span>
+                        <span class="info-value">English, Hindi</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-card about-card-right">
+                <div class="about-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>Experience</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="1">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="2">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Projects Done</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="1000">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">GitHub Contributions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-header">
+            <span class="section-label">02</span>
+            <h2 class="section-title">Skills & Tech</h2>
+            <p class="section-subtitle">Technologies I work with</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card" data-skill="90">
+                <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <h4>JavaScript</h4>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 90%"></div>
+                </div>
+                <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-card" data-skill="85">
+                <div class="skill-icon">
+                    <i class="fab fa-react"></i>
+                </div>
+                <h4>React</h4>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 85%"></div>
+                </div>
+                <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-card" data-skill="95">
+                <div class="skill-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <h4>CSS3</h4>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 95%"></div>
+                </div>
+                <span class="skill-percent">95%</span>
+            </div>
+            <div class="skill-card" data-skill="80">
+                <div class="skill-icon">
+                    <i class="fab fa-bootstrap"></i>
+                </div>
+                <h4>Bootstrap</h4>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 80%"></div>
+                </div>
+                <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-card" data-skill="75">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h4>C Programming</h4>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 75%"></div>
+                </div>
+                <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-card" data-skill="70">
+                <div class="skill-icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <h4>Java</h4>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 70%"></div>
+                </div>
+                <span class="skill-percent">70%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
     <section class="education" id="education">
-    
-    <h1 class="heading"> my <span>education</span> </h1>
-    
-    <div class="box-container">
-    
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span>2016-2017</span>
-            <h3>High School</h3>
-            <p>Mukularanyam english school, varanasi</p>
-            <p>CGPA. 8.6/10</p>
+        <div class="section-header">
+            <span class="section-label">03</span>
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">My academic journey</p>
         </div>
-    
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span>2018-2019</span>
-            <h3>Intermediate</h3>
-            <p>Happy model school, varanasi</p>
-            <p>Percentage: 75</p>
-        </div>
-    
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span>2020-present</span>
-            <h3>B.Tech in Computer Science</h3>
-            <p>Gla university, Mathura</p>
-            <p>CPI. 7.6 till 3rd sem</p>
-        </div>
-    
-    
-    </div>
-    
-    </section>
-    
-    <!-- education section ends -->
-    
-    <!-- portfolio section starts  -->
-    
-    <section class="portfolio" id="portfolio">
-    
-    <h1 class="heading"> my <span>Hobbies</span> </h1>
-    
-    <div class="box-container">
-    
-        <div class="box">
-            <img src="/Images/cooking.jpg" alt="">
-        </div>
-    
-        <div class="box">
-            <img src="/Images/cricket.jpg" alt="">
-        </div>
-    
-        <div class="box">
-            <img src="/Images/music.jpg" alt="">
-        </div>
-    
-        <div class="box">
-            <img src="/Images/photography.jpg" alt="">
-        </div>
-    
-        <div class="box">
-            <img src="/Images/programming.jpg" alt="">
-        </div>
-    
-        <div class="box">
-            <img src="/Images/reading.jpg" alt="">
-        </div>
-    
-    </div>
-    
-    </section>
-    
-    <!-- portfolio section ends -->
-    
-    <!-- contact section starts  -->
-    
-    <section class="contact" id="contact">
-    
-    <h1 class="heading"> <span>contact</span> me </h1>
-    
-    <div class="row">
-    
-        <div class="content">
-    
-            <h3 class="title">contact info</h3>
-    
-            <div class="info">
-                <h3> <i class="fas fa-envelope"></i> nsinghboss02@gmail.com </h3>
-                <h3> <i class="fas fa-phone"></i> +918840813735</h3>
-                <h3> <i class="fas fa-map-marker-alt"></i> Mathura, india - 281004  </h3>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2020 - Present</span>
+                    <h3 class="timeline-title">B.Tech in Computer Science</h3>
+                    <p class="timeline-place">GLA University, Mathura</p>
+                    <p class="timeline-desc">Currently pursuing with CPI 7.6 till 3rd semester. Learning software development, data structures, and algorithms.</p>
+                </div>
             </div>
-    
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2018 - 2019</span>
+                    <h3 class="timeline-title">Intermediate</h3>
+                    <p class="timeline-place">Happy Model School, Varanasi</p>
+                    <p class="timeline-desc">Completed with 75% marks. Developed interest in mathematics and computer science.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2016 - 2017</span>
+                    <h3 class="timeline-title">High School</h3>
+                    <p class="timeline-place">Mukularanyam English School, Varanasi</p>
+                    <p class="timeline-desc">Completed with CGPA 8.6/10. Foundation of academic excellence.</p>
+                </div>
+            </div>
         </div>
-    
-        <form action="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=nsinghboss02@gmail.com" method="get">
-    
-            <input type="text" placeholder="name" name="subject" class="box">
-            <input type="email" placeholder="email" class="box">
-            <input type="text" placeholder="project" class="box">
-            <textarea name="body" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-            <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
-    
-        </form>
-    
-    </div>
-    
     </section>
-    
-    <!-- contact section ends -->
-    
-    
-    <!-- scroll top button  -->
-    
-    <a href="#home" class="top">
+
+    <!-- Hobbies Section -->
+    <section class="hobbies" id="hobbies">
+        <div class="section-header">
+            <span class="section-label">04</span>
+            <h2 class="section-title">Hobbies & Interests</h2>
+            <p class="section-subtitle">Things I love beyond code</p>
+        </div>
+        <div class="hobbies-grid">
+            <div class="hobby-card">
+                <div class="hobby-image-wrapper">
+                    <img src="/Images/programming.jpg" alt="Programming" class="hobby-image">
+                    <div class="hobby-overlay">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+                <div class="hobby-info">
+                    <h4>Coding</h4>
+                    <p>Building projects & learning new tech</p>
+                </div>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-image-wrapper">
+                    <img src="/Images/cricket.jpg" alt="Cricket" class="hobby-image">
+                    <div class="hobby-overlay">
+                        <i class="fas fa-baseball-ball"></i>
+                    </div>
+                </div>
+                <div class="hobby-info">
+                    <h4>Cricket</h4>
+                    <p>Playing cricket with friends</p>
+                </div>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-image-wrapper">
+                    <img src="/Images/music.jpg" alt="Music" class="hobby-image">
+                    <div class="hobby-overlay">
+                        <i class="fas fa-music"></i>
+                    </div>
+                </div>
+                <div class="hobby-info">
+                    <h4>Music</h4>
+                    <p>Listening to music while coding</p>
+                </div>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-image-wrapper">
+                    <img src="/Images/photography.jpg" alt="Photography" class="hobby-image">
+                    <div class="hobby-overlay">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                </div>
+                <div class="hobby-info">
+                    <h4>Photography</h4>
+                    <p>Capturing beautiful moments</p>
+                </div>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-image-wrapper">
+                    <img src="/Images/reading.jpg" alt="Reading" class="hobby-image">
+                    <div class="hobby-overlay">
+                        <i class="fas fa-book"></i>
+                    </div>
+                </div>
+                <div class="hobby-info">
+                    <h4>Reading</h4>
+                    <p>Tech blogs & self-improvement books</p>
+                </div>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-image-wrapper">
+                    <img src="/Images/cooking.jpg" alt="Cooking" class="hobby-image">
+                    <div class="hobby-overlay">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                </div>
+                <div class="hobby-info">
+                    <h4>Cooking</h4>
+                    <p>Experimenting with new recipes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <span class="section-label">05</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's work together</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <a href="mailto:nsinghboss02@gmail.com">nsinghboss02@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <a href="tel:+918840813735">+91 8840813735</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <span>Mathura, India - 281004</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/antono4" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>Nitin Singh</span>
+            </div>
+            <p class="footer-text">Crafting digital experiences with passion</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="footer-copy">Designed & Built by Antono</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
-    </a>
-    
-
-
-
-
-
-
-
+    </button>
 
     <!-- jquery cdn link -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<!-- custom js file link -->
-<script src="/javascript/script.js"></script>
-
-    <footer style="text-align:center;padding:20px;font-size:14px;color:#666;">
-        Created by Antono
-    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/javascript/script.js"></script>
 </body>
 </html>
