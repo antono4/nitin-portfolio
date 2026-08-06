@@ -11,7 +11,7 @@ on:
 jobs:
   update-repo:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4.2.2
@@ -19,8 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v5
         with:
-          node-version: 'lts/*'
-          cache: 'npm'
+          node-version: '22'
 
       - name: Configure Git
         run: |
