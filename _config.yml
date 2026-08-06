@@ -1,1 +1,4 @@
-theme: jekyll-theme-merlot
+# Disable Jekyll theme to use custom HTML
+theme: null
+plugins:
+  - jekyll-sitemap
