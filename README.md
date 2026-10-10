@@ -11,7 +11,7 @@
   <a href="https://github.com/antono4/nitin-portfolio"><img alt="GitHub repo" src="https://img.shields.io/badge/GitHub-antono4/nitin-portfolio-blue?logo=github"></a>
   <a href="https://antono4.github.io/nitin-portfolio/"><img alt="Live Demo" src="https://img.shields.io/badge/Live%20Demo-Online-success?logo=githubpages"></a>
   <img alt="Files" src="https://img.shields.io/badge/Files-18-informational">
-  <img alt="Updated" src="https://img.shields.io/badge/Updated-2026-10-10 16:42:24 WIB-lightgrey">
+  <img alt="Updated" src="https://img.shields.io/badge/Updated-2026-10-10 22:50:12 WIB-lightgrey">
 </p>
 
 ---
@@ -61,5 +61,4 @@ Lihat berkas [`LICENSE`](./LICENSE) untuk informasi lisensi.
 
 ---
 
-<sub>README ini di-generate otomatis pada **2026-10-10 16:42:24 WIB** oleh GitHub Actions `.github/workflows/generate-readme.yml`.</sub>
-Last updated: 2026-10-10 22:49:33 WIB
+<sub>README ini di-generate otomatis pada **2026-10-10 22:50:12 WIB** oleh GitHub Actions `.github/workflows/generate-readme.yml`.</sub>
